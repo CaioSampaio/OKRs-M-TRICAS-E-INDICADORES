@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AILeap - Dashboard OKR 1 | Cena 5: Q5 Sucesso e Objetivo Concluído</title>
+  <!-- Tailwind CSS para estilização -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js para gráficos interativos -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen p-6 md:p-10">
+
+  <div class="max-w-7xl mx-auto space-y-8">
+    
+    <!-- Cabeçalho da Cena 5 -->
+    <header class="border-b border-emerald-500/30 pb-5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-semibold rounded-full border border-emerald-500/20">
+            CENA 5 DE 8 • QUINTO TRIMESTRE (Q5 - MÊS 14)
+          </span>
+          <span class="px-3 py-1 bg-amber-500/10 text-amber-300 text-xs font-bold rounded-full border border-amber-500/30 flex items-center gap-1">
+            ⚡ ENTREGUE 20 DIAS ANTES DO PRAZO
+          </span>
+        </div>
+        <h1 class="text-3xl font-bold text-white tracking-tight">OKR 1: Crescimento e Aquisição</h1>
+        <p class="text-slate-400 text-sm mt-1">
+          Objetivo: Ser a maior plataforma de ensino em IA em até 15 meses.
+        </p>
+      </div>
+      <div class="bg-slate-900 p-3 rounded-lg border border-emerald-500/40 text-right bg-gradient-to-r from-emerald-950/30 to-slate-900">
+        <span class="text-xs text-slate-400 block">Status Final OKR 1</span>
+        <span class="text-emerald-400 font-extrabold text-base">🎯 100% DAS METAS ATIVAS BATIDAS</span>
+      </div>
+    </header>
+
+    <!-- Cards de KPIs da Cena 5 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      
+      <!-- KR1 Card (Meta BCD + B2B Atingida) -->
+      <div class="bg-slate-900 border border-emerald-500/50 rounded-xl p-5 hover:border-emerald-400 transition relative overflow-hidden bg-gradient-to-b from-emerald-500/10 to-transparent">
+        <div class="absolute top-0 right-0 bg-emerald-500 text-slate-950 text-[10px] font-bold px-2 py-0.5 rounded-bl">
+          100% ALCANÇADO
+        </div>
+        <span class="text-xs text-slate-300 font-medium">KR1 • Assinantes (B2C + B2B)</span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-emerald-400">12.0M</span>
+          <span class="text-xs text-emerald-400 font-semibold">+1.2M no Q5</span>
+        </div>
+        <div class="w-full bg-slate-800 h-1.5 rounded-full mt-3 overflow-hidden">
+          <div class="bg-emerald-400 h-full rounded-full" style="width: 100%;"></div>
+        </div>
+        <span class="text-[10px] text-emerald-300 mt-1 block">Meta 12M Conquistada em 14 meses</span>
+      </div>
+
+      <!-- KR2 Card (ABANDONADO NO Q4 - MANTIDO EM HISTÓRICO) -->
+      <div class="bg-slate-900/40 border border-slate-800 rounded-xl p-5 relative overflow-hidden opacity-50">
+        <div class="absolute top-0 right-0 bg-slate-800 text-slate-400 text-[10px] font-bold px-2 py-0.5 rounded-bl">
+          ABANDONADO NO Q4
+        </div>
+        <span class="text-xs text-slate-500 font-medium line-through">KR2 • Conversão Free Trial</span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-slate-500 line-through">590.000</span>
+          <span class="text-xs text-slate-500 font-semibold">N/A</span>
+        </div>
+        <div class="w-full bg-slate-800 h-1.5 rounded-full mt-3 overflow-hidden">
+          <div class="bg-slate-700 h-full rounded-full" style="width: 73.7%;"></div>
+        </div>
+        <span class="text-[10px] text-slate-500 mt-1 block">Descontinuado para priorizar B2B</span>
+      </div>
+
+      <!-- KR3 Card (Meta Atingida) -->
+      <div class="bg-slate-900 border border-emerald-500/50 rounded-xl p-5 hover:border-emerald-400 transition relative overflow-hidden bg-gradient-to-b from-emerald-500/10 to-transparent">
+        <div class="absolute top-0 right-0 bg-emerald-500 text-slate-950 text-[10px] font-bold px-2 py-0.5 rounded-bl">
+          100% ALCANÇADO
+        </div>
+        <span class="text-xs text-slate-300 font-medium">KR3 • Redução de CAC</span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-emerald-400">-20.0%</span>
+          <span class="text-xs text-emerald-400 font-semibold">Meta Bateda</span>
+        </div>
+        <div class="w-full bg-slate-800 h-1.5 rounded-full mt-3 overflow-hidden">
+          <div class="bg-emerald-400 h-full rounded-full" style="width: 100%;"></div>
+        </div>
+        <span class="text-[10px] text-emerald-300 mt-1 block">Redução completa de 20% atingida</span>
+      </div>
+
+      <!-- KR4 Card (Meta Atingida) -->
+      <div class="bg-slate-900 border border-emerald-500/50 rounded-xl p-5 hover:border-emerald-400 transition relative overflow-hidden bg-gradient-to-b from-emerald-500/10 to-transparent">
+        <div class="absolute top-0 right-0 bg-emerald-500 text-slate-950 text-[10px] font-bold px-2 py-0.5 rounded-bl">
+          100% ALCANÇADO
+        </div>
+        <span class="text-xs text-slate-300 font-medium">KR4 • Retorno sobre Inv. (ROI)</span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-emerald-400">2.75x</span>
+          <span class="text-xs text-emerald-400 font-semibold">+0.28x no Q5</span>
+        </div>
+        <div class="w-full bg-slate-800 h-1.5 rounded-full mt-3 overflow-hidden">
+          <div class="bg-emerald-400 h-full rounded-full" style="width: 100%;"></div>
+        </div>
+        <span class="text-[10px] text-emerald-300 mt-1 block">ROI subiu de 1.8 para 2.75</span>
+      </div>
+
+    </div>
+
+    <!-- Área de Gráficos Interativos -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      
+      <!-- Gráfico Principal: A Jornada de 14 Meses até a Vitória -->
+      <div class="lg:col-span-2 bg-slate-900 border border-slate-800 rounded-xl p-6">
+        <div class="flex justify-between items-center mb-4">
+          <div>
+            <h2 class="text-lg font-semibold text-white">Jornada Completa do OKR 1 (14 Meses)</h2>
+            <p class="text-xs text-slate-400">Trajetória dos KPIs ativos desde a largada (Q1), superando o inverno da IA (Q2) e o Pivot B2B (Q3/Q4).</p>
+          </div>
+        </div>
+        <div class="h-72 w-full">
+          <canvas id="q5VictoryChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Gráfico Secundário: Resultado Final de Atingimento (100%) -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <h2 class="text-lg font-semibold text-white mb-1">Status Final dos KRs</h2>
+          <p class="text-xs text-slate-400 mb-4">100% de atingimento nos KRs ativos do OKR 1.</p>
+          <div class="h-60 w-full">
+            <canvas id="kpisOverviewQ5Chart"></canvas>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Caixa explicativa da Narrativa -->
+    <div class="bg-emerald-950/30 border border-emerald-500/40 rounded-xl p-5 flex items-start gap-4">
+      <div class="p-2 bg-emerald-500/20 border border-emerald-500/30 rounded-lg text-emerald-400 shrink-0">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <div>
+        <h3 class="text-sm font-bold text-emerald-300">Narrativa da Cena 5: O Objetivo Alcançado</h3>
+        <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+          No quinto trimestre, houve um grande esforço conjunto das áreas comercial, financeira e de marketing para realizarem as entregas finais. Com o forte impulso trazido pelas licenças corporativas B2B, todos os números previstos foram **alcançados faltando 20 dias para o encerramento oficial do prazo** de 15 meses. O objetivo de Crescimento e Aquisição foi plenamente atingido (100% dos KPIs ativos).
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript para inicialização dos gráficos Chart.js -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      
+      Chart.defaults.color = '#94a3b8';
+      Chart.defaults.borderColor = '#1e293b';
+
+      // --- GRÁFICO 1: Evolução Histórica Completa do OKR 1 ---
+      const ctxVictory = document.getElementById('q5VictoryChart').getContext('2d');
+      new Chart(ctxVictory, {
+        type: 'line',
+        data: {
+          labels: ['Q1', 'Q2 (Queda IA)', 'Q3 (Pivot B2B)', 'Q4 (Contratos B2B)', 'Q5 (14 Meses e 10 Dias)'],
+          datasets: [
+            {
+              label: 'Média KRs Ativos (%)',
+              data: [27, 21, 40, 70, 100],
+              borderColor: '#10b981', // emerald-500
+              backgroundColor: 'rgba(16, 185, 129, 0.2)',
+              fill: true,
+              tension: 0.2,
+              borderWidth: 4,
+              pointRadius: 6,
+              pointBackgroundColor: '#34d399'
+            },
+            {
+              label: 'Linha de Meta Esperada (100%)',
+              data: [20, 40, 60, 80, 100],
+              borderColor: '#64748b', // slate-500
+              borderDash: [5, 5],
+              fill: false,
+              borderWidth: 2,
+              pointRadius: 0
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'bottom' },
+            tooltip: {
+              callbacks: {
+                label: (context) => ` ${context.dataset.label}: ${context.raw}%`
+              }
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 110,
+              ticks: { callback: (val) => val + '%' }
+            }
+          }
+        }
+      });
+
+      // --- GRÁFICO 2: Resultado Final de 100% nos KRs ---
+      const ctxOverview = document.getElementById('kpisOverviewQ5Chart').getContext('2d');
+      new Chart(ctxOverview, {
+        type: 'bar',
+        data: {
+          labels: ['KR1 (Assinantes)', 'KR2 (Abandonado)', 'KR3 (Red. CAC)', 'KR4 (ROI)'],
+          datasets: [{
+            label: '% Final do Objetivo Alcançado',
+            data: [100, 0, 100, 100], // KR2 desconsiderado
+            backgroundColor: [
+              'rgba(16, 185, 129, 0.9)',
+              'rgba(51, 65, 85, 0.3)', // Cinza descontinuado
+              'rgba(16, 185, 129, 0.9)',
+              'rgba(16, 185, 129, 0.9)'
+            ],
+            borderRadius: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100,
+              ticks: { callback: (val) => val + '%' }
+            }
+          }
+        }
+      });
+
+    });
+  </script>
+</body>
+</html>

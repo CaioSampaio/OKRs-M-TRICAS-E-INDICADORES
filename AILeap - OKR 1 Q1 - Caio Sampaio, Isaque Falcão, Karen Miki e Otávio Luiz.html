@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AILeap - Dashboard OKR 1 | Cena 1: Q1 Promissor</title>
+  <!-- Tailwind CSS para estilização ágil -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js para os gráficos interativos -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen p-6 md:p-10">
+
+  <div class="max-w-7xl mx-auto space-y-8">
+    
+    <!-- Cabeçalho da Cena 1 -->
+    <header class="border-b border-slate-800 pb-5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <div>
+        <span class="inline-block px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-semibold rounded-full border border-emerald-500/20 mb-2">
+          CENA 1 DE 8 • PRIMEIRO TRIMESTRE (Q1)
+        </span>
+        <h1 class="text-3xl font-bold text-white tracking-tight">OKR 1: Crescimento e Aquisição</h1>
+        <p class="text-slate-400 text-sm mt-1">
+          Objetivo: Ser a maior plataforma de ensino em IA em 15 meses.
+        </p>
+      </div>
+      <div class="bg-slate-900 p-3 rounded-lg border border-slate-800 text-right">
+        <span class="text-xs text-slate-400 block">Status Q1</span>
+        <span class="text-emerald-400 font-bold text-sm">✓ Desempenho Acima da Meta</span>
+      </div>
+    </header>
+
+    <!-- Cards de KPIs da Cena 1 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      
+      <!-- KR1 Card -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 hover:border-slate-700 transition">
+        <span class="text-xs text-slate-400 font-medium">KR1 • Assinantes Mensais</span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-white">8.8M</span>
+          <span class="text-xs text-emerald-400 font-semibold">+800k no Q1</span>
+        </div>
+        <div class="w-full bg-slate-800 h-1.5 rounded-full mt-3 overflow-hidden">
+          <div class="bg-emerald-500 h-full rounded-full" style="width: 20%;"></div>
+        </div>
+        <span class="text-[10px] text-slate-500 mt-1 block">Meta 15m: 12M</span>
+      </div>
+
+      <!-- KR2 Card (Destaque da Cena 1) -->
+      <div class="bg-slate-900 border border-emerald-500/30 rounded-xl p-5 relative overflow-hidden">
+        <div class="absolute top-0 right-0 bg-emerald-500 text-slate-950 text-[10px] font-bold px-2 py-0.5 rounded-bl">
+          DESTAQUE Q1
+        </div>
+        <span class="text-xs text-slate-400 font-medium">KR2 • Conversão Free Trial</span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-emerald-400">415.000</span>
+          <span class="text-xs text-emerald-400 font-semibold">&gt; 400k (103%)</span>
+        </div>
+        <div class="w-full bg-slate-800 h-1.5 rounded-full mt-3 overflow-hidden">
+          <div class="bg-emerald-400 h-full rounded-full" style="width: 52%;"></div>
+        </div>
+        <span class="text-[10px] text-slate-500 mt-1 block">Meta 6m: 800.000</span>
+      </div>
+
+      <!-- KR3 Card -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 hover:border-slate-700 transition">
+        <span class="text-xs text-slate-400 font-medium">KR3 • Redução de CAC</span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-white">-6.5%</span>
+          <span class="text-xs text-emerald-400 font-semibold">Em ritmo</span>
+        </div>
+        <div class="w-full bg-slate-800 h-1.5 rounded-full mt-3 overflow-hidden">
+          <div class="bg-emerald-500 h-full rounded-full" style="width: 32%;"></div>
+        </div>
+        <span class="text-[10px] text-slate-500 mt-1 block">Meta 8m: -20%</span>
+      </div>
+
+      <!-- KR4 Card -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 hover:border-slate-700 transition">
+        <span class="text-xs text-slate-400 font-medium">KR4 • Retorno sobre Inv. (ROI)</span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-white">2.05x</span>
+          <span class="text-xs text-emerald-400 font-semibold">+0.25x</span>
+        </div>
+        <div class="w-full bg-slate-800 h-1.5 rounded-full mt-3 overflow-hidden">
+          <div class="bg-emerald-500 h-full rounded-full" style="width: 26%;"></div>
+        </div>
+        <span class="text-[10px] text-slate-500 mt-1 block">Meta 10m: 2.75x (Inicial: 1.8x)</span>
+      </div>
+
+    </div>
+
+    <!-- Área de Gráficos Interativos -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      
+      <!-- Gráfico Principal: Progresso da Conversão Free Trial (KR2) -->
+      <div class="lg:col-span-2 bg-slate-900 border border-slate-800 rounded-xl p-6">
+        <div class="flex justify-between items-center mb-4">
+          <div>
+            <h2 class="text-lg font-semibold text-white">Evolução do KR2: Conversão Free Trial</h2>
+            <p class="text-xs text-slate-400">Meta ultrapassada de 400 mil usuários convertidos no primeiro trimestre.</p>
+          </div>
+        </div>
+        <div class="h-72 w-full">
+          <canvas id="kr2Chart"></canvas>
+        </div>
+      </div>
+
+      <!-- Gráfico Secundário: Progresso Geral dos KRs no Q1 (%) -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <h2 class="text-lg font-semibold text-white mb-1">Atingimento Relativo (Q1)</h2>
+          <p class="text-xs text-slate-400 mb-4">Percentual do objetivo final alcançado no Q1.</p>
+          <div class="h-60 w-full">
+            <canvas id="kpisOverviewChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Caixa explicativa da Narrativa -->
+    <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-5 flex items-start gap-4">
+      <div class="p-2 bg-emerald-500/10 border border-emerald-500/20 rounded-lg text-emerald-400 shrink-0">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+      </div>
+      <div>
+        <h3 class="text-sm font-semibold text-white">Narrativa da Cena 1</h3>
+        <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+          Após a definição dos OKRs, Comercial, Financeiro e Marketing iniciaram a execução integrada. No primeiro quarter, a conversão de usuários free trial ultrapassou os 400.000 assinantes (KR2), enquanto os demais KPIs apresentaram uma tendência consistente de alta para baterem suas metas no prazo estipulado.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript para inicialização dos gráficos Chart.js -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      
+      // Estilização global do Chart.js para o tema escuro
+      Chart.defaults.color = '#94a3b8';
+      Chart.defaults.borderColor = '#1e293b';
+
+      // --- GRÁFICO 1: KR2 Conversão Free Trial ---
+      const ctxKR2 = document.getElementById('kr2Chart').getContext('2d');
+      new Chart(ctxKR2, {
+        type: 'line',
+        data: {
+          labels: ['Início', 'Mês 1', 'Mês 2', 'Mês 3 (Q1)'],
+          datasets: [
+            {
+              label: 'Usuários Convertidos (Real)',
+              data: [0, 130000, 270000, 415000],
+              borderColor: '#10b981', // emerald-500
+              backgroundColor: 'rgba(16, 185, 129, 0.1)',
+              fill: true,
+              tension: 0.3,
+              borderWidth: 3,
+              pointRadius: 5,
+              pointBackgroundColor: '#10b981'
+            },
+            {
+              label: 'Meta Mínima Q1 (400k)',
+              data: [0, 133333, 266666, 400000],
+              borderColor: '#64748b', // slate-500
+              borderDash: [5, 5],
+              fill: false,
+              borderWidth: 2,
+              pointRadius: 0
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'bottom' },
+            tooltip: {
+              callbacks: {
+                label: (context) => ` ${context.dataset.label}: ${context.raw.toLocaleString('pt-BR')} assinantes`
+              }
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              ticks: {
+                callback: (value) => (value / 1000) + 'k'
+              }
+            }
+          }
+        }
+      });
+
+      // --- GRÁFICO 2: Visão Geral de Atingimento (%) ---
+      const ctxOverview = document.getElementById('kpisOverviewChart').getContext('2d');
+      new Chart(ctxOverview, {
+        type: 'bar',
+        data: {
+          labels: ['KR1 (Assinantes)', 'KR2 (Free Trial)', 'KR3 (Red. CAC)', 'KR4 (ROI)'],
+          datasets: [{
+            label: '% da Meta Alcançada no Q1',
+            data: [20, 52, 32, 26], // KR2 já passou de 50% da meta de 6 meses no Q1
+            backgroundColor: [
+              'rgba(16, 185, 129, 0.7)',
+              'rgba(52, 211, 153, 0.9)',
+              'rgba(16, 185, 129, 0.7)',
+              'rgba(16, 185, 129, 0.7)'
+            ],
+            borderRadius: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100,
+              ticks: { callback: (val) => val + '%' }
+            }
+          }
+        }
+      });
+
+    });
+  </script>
+</body>
+</html>

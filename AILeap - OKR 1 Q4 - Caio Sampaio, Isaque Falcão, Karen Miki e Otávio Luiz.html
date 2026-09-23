@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AILeap - Dashboard OKR 1 | Cena 4: Q4 Salto B2B & Abandono KR2</title>
+  <!-- Tailwind CSS para estilização -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js para gráficos interativos -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen p-6 md:p-10">
+
+  <div class="max-w-7xl mx-auto space-y-8">
+    
+    <!-- Cabeçalho da Cena 4 -->
+    <header class="border-b border-violet-500/20 pb-5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <div>
+        <span class="inline-block px-3 py-1 bg-violet-500/10 text-violet-400 text-xs font-semibold rounded-full border border-violet-500/20 mb-2">
+          CENA 4 DE 8 • QUARTO TRIMESTRE (Q4 - MÊS 12)
+        </span>
+        <h1 class="text-3xl font-bold text-white tracking-tight">OKR 1: Crescimento e Aquisição</h1>
+        <p class="text-slate-400 text-sm mt-1">
+          Objetivo: Ser a maior plataforma de ensino em IA em 15 meses.
+        </p>
+      </div>
+      <div class="bg-slate-900 p-3 rounded-lg border border-violet-500/30 text-right">
+        <span class="text-xs text-slate-400 block">Status Q4</span>
+        <span class="text-violet-400 font-bold text-sm">🚀 Tração B2B: KRs Ativos em 70%</span>
+      </div>
+    </header>
+
+    <!-- Cards de KPIs da Cena 4 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      
+      <!-- KR1 Card (Com inclusão de licenças B2B) -->
+      <div class="bg-slate-900 border border-violet-500/40 rounded-xl p-5 hover:border-violet-500 transition relative">
+        <div class="absolute top-0 right-0 bg-violet-500 text-slate-950 text-[10px] font-bold px-2 py-0.5 rounded-bl">
+          INCLUI B2B
+        </div>
+        <span class="text-xs text-slate-400 font-medium">KR1 • Assinantes (B2C + B2B)</span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-violet-300">10.8M</span>
+          <span class="text-xs text-violet-400 font-semibold">+1.2M no Q4</span>
+        </div>
+        <div class="w-full bg-slate-800 h-1.5 rounded-full mt-3 overflow-hidden">
+          <div class="bg-violet-500 h-full rounded-full" style="width: 70%;"></div>
+        </div>
+        <span class="text-[10px] text-violet-300/80 mt-1 block">70% da meta alcançada (12M)</span>
+      </div>
+
+      <!-- KR2 Card (ABANDONADO / DESCONTINUADO) -->
+      <div class="bg-slate-900/40 border border-slate-800 rounded-xl p-5 relative overflow-hidden opacity-60">
+        <div class="absolute top-0 right-0 bg-rose-500/80 text-white text-[10px] font-bold px-2 py-0.5 rounded-bl">
+          DESCONTINUADO
+        </div>
+        <span class="text-xs text-slate-500 font-medium line-through">KR2 • Conversão Free Trial</span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-slate-500 line-through">590.000</span>
+          <span class="text-xs text-rose-400 font-semibold">Abandonado</span>
+        </div>
+        <div class="w-full bg-slate-800 h-1.5 rounded-full mt-3 overflow-hidden">
+          <div class="bg-slate-700 h-full rounded-full" style="width: 73.7%;"></div>
+        </div>
+        <span class="text-[10px] text-slate-500 mt-1 block">Foco redirecionado para o B2B</span>
+      </div>
+
+      <!-- KR3 Card -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 hover:border-violet-500/30 transition">
+        <span class="text-xs text-slate-400 font-medium">KR3 • Redução de CAC</span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-white">-14.0%</span>
+          <span class="text-xs text-violet-400 font-semibold">Impulso Orgânico</span>
+        </div>
+        <div class="w-full bg-slate-800 h-1.5 rounded-full mt-3 overflow-hidden">
+          <div class="bg-violet-500 h-full rounded-full" style="width: 70%;"></div>
+        </div>
+        <span class="text-[10px] text-violet-300/80 mt-1 block">70% da meta alcançada (-20%)</span>
+      </div>
+
+      <!-- KR4 Card -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 hover:border-violet-500/30 transition">
+        <span class="text-xs text-slate-400 font-medium">KR4 • Retorno sobre Inv. (ROI)</span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-white">2.47x</span>
+          <span class="text-xs text-violet-400 font-semibold">+0.29x no Q4</span>
+        </div>
+        <div class="w-full bg-slate-800 h-1.5 rounded-full mt-3 overflow-hidden">
+          <div class="bg-violet-500 h-full rounded-full" style="width: 70%;"></div>
+        </div>
+        <span class="text-[10px] text-violet-300/80 mt-1 block">70% da meta alcançada (2.75x)</span>
+      </div>
+
+    </div>
+
+    <!-- Área de Gráficos Interativos -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      
+      <!-- Gráfico Principal: Salto de Tração B2B (40% para 70%) -->
+      <div class="lg:col-span-2 bg-slate-900 border border-slate-800 rounded-xl p-6">
+        <div class="flex justify-between items-center mb-4">
+          <div>
+            <h2 class="text-lg font-semibold text-white">Aceleração B2B no Q4: Salto de 40% para 70%</h2>
+            <p class="text-xs text-slate-400">Contratos corporativos fecham com sucesso e KR2 é desconectado da meta.</p>
+          </div>
+        </div>
+        <div class="h-72 w-full">
+          <canvas id="q4JumpChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Gráfico Secundário: Atingimento dos KRs Ativos vs. Abandono do KR2 -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <h2 class="text-lg font-semibold text-white mb-1">Atingimento Relativo (Q4)</h2>
+          <p class="text-xs text-slate-400 mb-4">KRs ativos alinham-se em 70%; KR2 descontinuado.</p>
+          <div class="h-60 w-full">
+            <canvas id="kpisOverviewQ4Chart"></canvas>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Caixa explicativa da Narrativa -->
+    <div class="bg-violet-950/20 border border-violet-500/30 rounded-xl p-5 flex items-start gap-4">
+      <div class="p-2 bg-violet-500/10 border border-violet-500/20 rounded-lg text-violet-400 shrink-0">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+      </div>
+      <div>
+        <h3 class="text-sm font-semibold text-violet-300">Narrativa da Cena 4: A Decisão da Liderança</h3>
+        <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+          Com o sucesso no fechamento de parcerias com diversas empresas, todos os KPIs ativos saltaram para **70% de atingimento** no Q4. O KR1 passou a contabilizar o número de colaboradores das empresas parceiras. Em contrapartida, o KR2 alcançou apenas 590 mil conversões de free trial e a liderança decidiu oficialmente **abandonar este KR** para concentrar 100% do foco nos demais indicadores B2B.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript para inicialização dos gráficos Chart.js -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      
+      Chart.defaults.color = '#94a3b8';
+      Chart.defaults.borderColor = '#1e293b';
+
+      // --- GRÁFICO 1: Trajetória no Q4 mostrando o Salto B2B ---
+      const ctxJump = document.getElementById('q4JumpChart').getContext('2d');
+      new Chart(ctxJump, {
+        type: 'line',
+        data: {
+          labels: ['Q1', 'Q2 (Alerta)', 'Q3 (Pivot)', 'Mês 10', 'Mês 11', 'Q4 (Fechamento)'],
+          datasets: [
+            {
+              label: 'Média KRs Ativos - KR1, KR3, KR4 (%)',
+              data: [27, 21, 40, 50, 60, 70],
+              borderColor: '#8b5cf6', // violet-500
+              backgroundColor: 'rgba(139, 92, 246, 0.15)',
+              fill: true,
+              tension: 0.3,
+              borderWidth: 3,
+              pointRadius: 5,
+              pointBackgroundColor: '#8b5cf6'
+            },
+            {
+              label: 'KR2 Free Trial (Abandonado em 590k)',
+              data: [415000, 549000, 580000, 585000, 588000, 590000],
+              borderColor: '#475569', // slate-600
+              borderDash: [6, 6],
+              fill: false,
+              borderWidth: 2,
+              yAxisID: 'y1',
+              pointRadius: 4,
+              pointBackgroundColor: '#475569'
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'bottom' },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  if (context.datasetIndex === 0) {
+                    return ` Atingimento KRs Ativos: ${context.raw}%`;
+                  }
+                  return ` KR2 (Abandonado): ${context.raw.toLocaleString('pt-BR')} assinantes`;
+                }
+              }
+            }
+          },
+          scales: {
+            y: {
+              type: 'linear',
+              display: true,
+              position: 'left',
+              title: { display: true, text: 'Progresso KRs Ativos (%)', color: '#8b5cf6' },
+              beginAtZero: true,
+              max: 100,
+              ticks: { callback: (val) => val + '%' }
+            },
+            y1: {
+              type: 'linear',
+              display: true,
+              position: 'right',
+              title: { display: true, text: 'KR2 Free Trial (Descontinuado)', color: '#475569' },
+              beginAtZero: true,
+              max: 800000,
+              grid: { drawOnChartArea: false },
+              ticks: { callback: (val) => (val / 1000) + 'k' }
+            }
+          }
+        }
+      });
+
+      // --- GRÁFICO 2: Comparativo dos KRs no Q4 ---
+      const ctxOverview = document.getElementById('kpisOverviewQ4Chart').getContext('2d');
+      new Chart(ctxOverview, {
+        type: 'bar',
+        data: {
+          labels: ['KR1 (+B2B)', 'KR2 (Abandonado)', 'KR3 (Red. CAC)', 'KR4 (ROI)'],
+          datasets: [{
+            label: '% de Atingimento no Q4',
+            data: [70, 0, 70, 70], // KR2 zerado no foco ativo
+            backgroundColor: [
+              'rgba(139, 92, 246, 0.85)',
+              'rgba(51, 65, 85, 0.4)', // Cinza escuro para indicar descontinuação
+              'rgba(139, 92, 246, 0.85)',
+              'rgba(139, 92, 246, 0.85)'
+            ],
+            borderRadius: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100,
+              ticks: { callback: (val) => val + '%' }
+            }
+          }
+        }
+      });
+
+    });
+  </script>
+</body>
+</html>
